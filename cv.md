@@ -4,9 +4,9 @@
 
 **E-mail:** artemyveliky02@gmail.com<br>
 **Phone:** +7 (910) 664 51 63<br>
-**VK:** [artevely](https://vk.com/artevely)<br>
 **Telegram:** [@artevely](https://t.me/artevely)<br>
-**Github:** [artevely](https://github.com/artevely)<br>
+**VK:** [link](https://vk.com/artevely)<br>
+**Github:** [link](https://github.com/artevely)<br>
 **Discord:** artevely
 
 ---
