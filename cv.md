@@ -1,7 +1,5 @@
 # Artemii Velikii
 
--
-
 ### Contact Information:
 
 **E-mail:** artemyveliky02@gmail.com<br>
@@ -15,9 +13,7 @@
 
 ### About me:
 My acquaintance with programming began in my first year at university. Now I am getting an education as an Information Security Specialist. And during the summer holidays, I decided to try Frontend development for general information. And I'm really interested in and want to develop in Front.<br>
-
-I guess my strengths are that I am active and curious, always want to learn something new. I am organized, keep my word and fulfill my responsibilities.<br> 
-I'm really calm and reserved but also like to have fun.<br>
+I guess my strengths are that I am active and curious, always want to learn something new. I am organized, keep my word and fulfill my responsibilities. I'm really calm and reserved but also like to have fun.<br>
 
 
 ---
