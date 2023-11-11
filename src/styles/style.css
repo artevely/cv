@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    font-family: 'Nunito-Bold', sans-serif;
+}
+
+.header {
+    display: grid;
+    position: relative;
+    grid-template-columns: 170px 1fr;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:  rgba(147,215,244,255);
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    border-top: 50px solid rgba(147,215,244,255);
+    border-right: 125px solid transparent;
+    left: 125px;
+    bottom: -50px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    border-top: 50px solid rgba(147,215,244,255);
+    border-left: 125px solid transparent;
+    left: 0;
+    bottom: -50px;
+
+}
+
+.header-avatar {
+    justify-self: center;
+}
+
+.header-avatar img{
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.header-title {
+    justify-self: center;
+    color: white;
+}
+
+.header-title-name {
+    font-size: 44px;
+}
+
+.header-title-prof {
+    font-size: 26px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+    "aside content";
+    grid-template-columns: 33% 67%;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 20px 0 20px;
+    background-color: aliceblue;
+}
+
+.aside-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.item-image {
+    width: 20px;
+}
+
+.item-text {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.education {
+    position: relative;
+}
+
+.education::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.education::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: 3px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.education-text {
+    padding-left: 20px;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.content {
+    background-color: white;
+    padding-left: 50px;
+}
+
+.section-title {
+    position: relative;
+    font-size: 26px;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.summary-strengths {
+    margin-top: 15px;
+}
+
+.strength-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.strengths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 40px;
+    list-style: circle;
+    margin-bottom: 30px;
+}
+
+.code-task {
+    margin-bottom: 10px;
+}
+
+.screen-code {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.screen-code img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "ru en chi"
+    "en-img en-img en-img";
+}
+
+.language-ru mark {
+    color: green;
+    background-color: transparent;
+    grid-area: ru;
+}
+
+.language-en mark {
+    color: orange;
+    background-color: transparent;
+    grid-area: en;
+}
+
+.language-chi mark {
+    color: red;
+    background-color: transparent;
+    grid-area: chi;
+}
+
+.certificate-en {
+    grid-area: en-img;
+    max-width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgba(147,215,244,255);
+    padding: 20px;
+    
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-year {
+    color: white;
+}
+
+
+
+.git-link {
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+.footer-github {
+    width: 50px;
+}
+
+.link-text {
+    color: white;
+}
+
