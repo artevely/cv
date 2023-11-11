@@ -16,13 +16,12 @@
             <h1 class="header-title-name">Artemii Velikii</h1>
             <h2 class="header-title-prof">Junior Web-Developer</h2>
         </div>
-        <!-- rgba(147,215,244,255) -->
     </header>
 
     <main class="main">
         <aside class="aside">
             <section class="contacts">
-                <h3 class="contacts-title title aside-title">Contacts Details</h3>
+                <h3 class="contacts-title title aside-title">Contact Details</h3>
                 <ul class="contacts-items">
                     <li class="contacts-item">
                         <img src="src/images/contacts/gmail.svg" alt="gmail" class="item-image">
@@ -47,24 +46,24 @@
             </section>
             <section class="education">
                 <h3 class="education-title title aside-title">Education</h3>
-                <div class="education-text">Saratov State University, faculty CSIT, <b>Computer Security</b> full-time, 2020-2026 (studying...)</div>
+                <div class="education-text item-text">Saratov State University, faculty CSIT, <b>Computer Security</b> full-time, 2020-2026 (studying...)</div>
             </section>
             <section class="skills">
                 <h3 class="skills-title title aside-title">Skills</h3>
                 <ul class="skills-items">
                     <li class="skills-item">
-                        <img src="src/images/skills/html.svg" alt="html">
-                        <span>HTML5</span>
+                        <img src="src/images/skills/html.svg" alt="html" class="item-image">
+                        <span class="item-text">HTML5</span>
                     </li>
                     
                     <li class="skills-item">
-                        <img src="src/images/skills/css.svg" alt="css">
-                        <span>CSS3</span>
+                        <img src="src/images/skills/css.svg" alt="css"class="item-image">
+                        <span class="item-text">CSS3</span>
                     </li>
                     
                     <li class="skills-item">
-                        <img src="src/images/skills/js.svg" alt="js">
-                        <span>JavaScript</span>
+                        <img src="src/images/skills/js.svg" alt="js" class="item-image">
+                        <span class="item-text">JavaScript</span>
                     </li>
                 </ul>
             </section>
@@ -87,18 +86,20 @@
             </section>
             <section class="code-example">
                 <h3 class="section-title title">Code example:</h3>
-                <pre class="code-task">
-                    Morse code decoder from Stage0:
+                <div class="code-task">
+                    Morse code decoder from Stage0:<br>
 
-                    Your task is to write a function, that decodes Morse code and returns a string. Write your solution in src/index.js
-
-                    Input: String. Its length is multiple of 10.
+                    <i>Input: String. Its length is multiple of 10.
                     Each letter from alphabet encoded with dots(.) and dashes(-). 10 stands for dot(.), 11 stands for dash(-).
                     Each encoded letter's length is 10.
                     If the length of the encoded letter is less then 10, it left padded with 0.
-                    Space in string is **********. Output: String (decoded) Example: me -> m === -- === 0000001111, e === . === 0000000010 -> 00000011110000000010*
-                </pre>
-                <img src="src/images/main/code.png" alt="code">
+                    Space in string is **********. Output: String (decoded) Example: me -> m === -- === 0000001111, e === . === 0000000010 -> 00000011110000000010*</i>
+                </div>
+                <div class="screen-code">
+                    <img src="src/images/main/code.png" alt="code1">
+                    <!-- <img src="src/images/main/code1.png" alt="code1">
+                    <img src="src/images/main/code2.png" alt="code2"> -->
+                </div>
             </section>
             <section class="language">
                 <h3 class="section-title title">Languages:</h3>
@@ -118,15 +119,13 @@
                     </svg>
                 </a>
             </div>
-            <div class="footer-year">
-
-            </div>
+            <div class="footer-year">© 2023</div>
             <div class="footer-git">
-                <a href="https://github.com/artevely" target="_blank" class="contacts-link">
-                    <img src="src/images/contacts/github.svg" alt="github" class="footer-github">
-                    <span>artevely</span>
+                <a href="https://github.com/artevely" target="_blank" class="git-link">
+                    <img src="src/images/contacts/github-footer.svg" alt="github" class="footer-github">
                 </a>
             </div>
     </footer>
 </body>
 </html>
+
