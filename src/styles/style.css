@@ -20,13 +20,13 @@ body {
     grid-template-columns: 170px 1fr;
     align-items: center;
     padding: 20px 40px;
-    background-color:  rgba(147,215,244,255);
+    background-color:  rgba(62, 62, 62, 0.7);
 }
 
 .header::before {
     content: "";
     position: absolute;
-    border-top: 50px solid rgba(147,215,244,255);
+    border-top: 50px solid rgba(62, 62, 62, 0.7);
     border-right: 125px solid transparent;
     left: 125px;
     bottom: -50px;
@@ -35,7 +35,7 @@ body {
 .header::after {
     content: "";
     position: absolute;
-    border-top: 50px solid rgba(147,215,244,255);
+    border-top: 50px solid rgba(62, 62, 62, 0.7);
     border-left: 125px solid transparent;
     left: 0;
     bottom: -50px;
@@ -233,7 +233,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  rgba(147,215,244,255);
+    background-color:  rgba(62, 62, 62, 0.7);
     padding: 20px;
     
 }
