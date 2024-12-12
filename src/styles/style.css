@@ -64,6 +64,11 @@ body {
     font-size: 26px;
 }
 
+.header-title-more {
+    font-size: 14px;
+    text-align: end;
+}
+
 .main {
     display: grid;
     grid-template-areas:
