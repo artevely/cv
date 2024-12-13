@@ -20,13 +20,13 @@ body {
     grid-template-columns: 170px 1fr;
     align-items: center;
     padding: 20px 40px;
-    background-color:  rgba(62, 62, 62, 0.7);
+    background-color:  rgba(62, 62, 62, 1);
 }
 
 .header::before {
     content: "";
     position: absolute;
-    border-top: 50px solid rgba(62, 62, 62, 0.7);
+    border-top: 50px solid rgba(62, 62, 62, 1);
     border-right: 125px solid transparent;
     left: 125px;
     bottom: -50px;
@@ -35,7 +35,7 @@ body {
 .header::after {
     content: "";
     position: absolute;
-    border-top: 50px solid rgba(62, 62, 62, 0.7);
+    border-top: 50px solid rgba(62, 62, 62, 1);
     border-left: 125px solid transparent;
     left: 0;
     bottom: -50px;
@@ -65,6 +65,7 @@ body {
 }
 
 .header-title-more {
+    padding-top: 30px;
     font-size: 14px;
     text-align: end;
 }
@@ -81,7 +82,7 @@ body {
     flex-direction: column;
     gap: 50px;
     padding: 80px 20px 0 20px;
-    background-color: aliceblue;
+    background-color: lightgray;
 }
 
 .aside-title {
@@ -120,26 +121,10 @@ body {
     position: relative;
 }
 
-.education::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 57px;
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    border-radius: 50%;
-}
-
-.education::after {
-    content: "";
-    position: absolute;
-    left: 1px;
-    bottom: 0;
-    width: 3px;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+.education-block {
+    border-left: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: 15px;
 }
 
 .education-text {
