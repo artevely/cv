@@ -1,0 +1,54 @@
+{
+  "header": {
+    "profession": "Middle QA Engineer",
+    "age": "22 years old",
+    "location": "Location: Russia, Moscow (GMT +3)"
+  },
+  "contacts": {
+    "title": "Contact Details",
+    "email": "work@velikiiao.ru",
+    "phone": "+7 (910) 664-51-63",
+    "telegram": "@artevely",
+    "github": "link",
+    "resume": "resume"
+  },
+  "education": {
+    "title": "Education",
+    "ssu": "Saratov State University: Faculty of CSIT, <b>Applied Computer Science</b> full-time — 2020-2025",
+    "school21": "School 21: <b>SQL, Programming, DevOps, CyberSecurity — 2024-2025</b>",
+    "ptstart": "PTStart: <b>Windows & Linux administration, Network, Web, DevOps — 2024</b>"
+  },
+  "skills": {
+    "title": "Skills",
+    "testManagement": "Test Management:",
+    "bugTracking": "Bug Tracking:",
+    "apiTesting": "API Testing:",
+    "debugging": "Network & Mobile Debugging:",
+    "databases": "Databases:",
+    "os": "Operating Systems:",
+    "docs": "Documentation & Test Design:",
+    "automation": "Basic Automation:",
+    "versionControl": "Version Control:"
+  },
+  "summary": {
+    "title": "Summary",
+    "strengthsTitle": "My strengths:",
+    "strengths": [
+      "Attention to detail and focus on product quality",
+      "Experienced in designing test cases, checklists, and bug reports",
+      "Able to quickly understand business logic and system requirements",
+      "Proactive in identifying risks and edge cases",
+      "Team-oriented, but capable of independent decision-making",
+      "Strong analytical thinking and problem-solving skills"
+    ]
+  },
+  "languages": {
+    "title": "Languages:",
+    "ru": "Russian - native",
+    "en": "English - upper-intermediate",
+    "chi": "Chinese - beginner"
+  },
+  "footer": {
+    "year": "© 2025"
+  }
+}

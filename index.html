@@ -1,145 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="icon" href="src/images/logo/cv.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="icon" href="src/images/logo/cv.ico">
 </head>
 <body>
-    <header class="header">
-        <div class="header-avatar">
-            <img src="src/images/header/my_avatar.png" alt="Avatar">
-        </div>
-        <div class="header-title">
-            <h1 class="header-title-name">Artemii Velikii</h1>
-            <h2 class="header-title-prof">DevOps/System Engineer</h2>
-            <div class="header-title-more">
-                <h3>22 years old</h3>
-                <h3>Location: Russia, Moscow (GMT +3)</h3>
-            </div>
+  <header class="header">
+    <div class="header-avatar">
+      <img src="src/images/header/my_avatar.png" alt="Avatar">
+    </div>
+    <div class="header-title">
+      <h1 class="header-title-name">Artemii Velikii</h1>
+      <h2 class="header-title-prof" data-i18n="header.profession">QA Engineer</h2>
+      <div class="header-title-more">
+        <h3 data-i18n="header.age">22 years old</h3>
+        <h3 data-i18n="header.location">Location: Russia, Moscow (GMT +3)</h3>
+      </div>
+    </div>
+    <div class="lang-switcher">
+      <button data-lang="en">EN</button>
+      <button data-lang="ru">RU</button>
+    </div>
+  </header>
 
-        </div>
-    </header>
+  <main class="main">
+    <aside class="aside">
+      <section class="contacts">
+        <h3 class="contacts-title title aside-title" data-i18n="contacts.title">Contact Details</h3>
+        <ul class="contacts-items">
+          <li class="contacts-item">
+            <img src="src/images/contacts/gmail.svg" alt="gmail" class="item-image">
+            <a class="item-text" href="mailto:work@velikiiao.ru" data-i18n="contacts.email">work@velikiiao.ru</a>
+          </li>
+          <li class="contacts-item">
+            <img src="src/images/contacts/phone.svg" alt="phone" class="item-image">
+            <a class="item-text" href="tel:+79106645163" data-i18n="contacts.phone">+7 (910) 664-51-63</a>
+          </li>
+          <li class="contacts-item">
+            <img src="src/images/contacts/telegram.svg" alt="telegram" class="item-image">
+            <a class="item-text" href="https://t.me/artevely" data-i18n="contacts.telegram">@artevely</a>
+          </li>
+          <li class="contacts-item">
+            <img src="src/images/contacts/github.svg" alt="github" class="item-image">
+            <a class="item-text" href="https://github.com/artevely" data-i18n="contacts.github">link</a>
+          </li>
+          <li class="contacts-item">
+            <img src="src/images/contacts/resume.svg" alt="resume" class="item-image">
+            <a class="item-text" href="src/files/resume.pdf" target="_blank" data-i18n="contacts.resume">resume</a>
+          </li>
+        </ul>
+      </section>
 
-    <main class="main">
-        <aside class="aside">
-            <section class="contacts">
-                <h3 class="contacts-title title aside-title">Contact Details</h3>
-                <ul class="contacts-items">
-                    <li class="contacts-item">
-                        <img src="src/images/contacts/gmail.svg" alt="gmail" class="item-image">
-                        <a class="item-text" href="mailto:work@velikiiao.ya">work@velikiiao.ru</a>
-                    </li>
-                    
-                    <li class="contacts-item">
-                        <img src="src/images/contacts/phone.svg" alt="phone" class="item-image">
-                        <a class="item-text" href="tel:+79106645163">+7 (910) 664-51-63</a>
-                    </li>
-                    
-                    <li class="contacts-item">
-                        <img src="src/images/contacts/telegram.svg" alt="telegram" class="item-image">
-                        <a class="item-text" href="https://t.me/artevely">@artevely</a>
-                    </li>
-                    
-                    <li class="contacts-item">
-                        <img src="src/images/contacts/github.svg" alt="github" class="item-image">
-                        <a class="item-text" href="https://github.com/artevely">link</a>
-                    </li>
-                    <li class="contacts-item">
-                        <img src="src/images/contacts/resume.svg" alt="resume" class="item-image">
-                        <a class="item-text" href="src/files/resume.pdf" target="_blank">resume</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="education">
-                <h3 class="education-title title aside-title">Education</h3>
-                <div class="education-text item-text education-block">Saratov State University: faculty CSIT, <b>Computer Security</b> full-time — 2020-2025</div>
-                <div class="education-text item-text education-block">School 21: <b>DevOps, CyberSecurity, Programming, SQL — 2024-2026</b></div>
-                <div class="education-text item-text education-block">PTStart: <b>Windows & Linux administration, Network, Web, DevOps — 2024</b></div>
-            </section>
-            <section class="skills">
-                <h3 class="skills-title title aside-title">Skills</h3>
-                <ul class="skills-items">
-                    <li class="skills-item">
-                        <img src="src/images/skills/siem.svg" alt="siem" class="item-image">
-                        <span class="item-text">CI/CD: GitLab CI/CD, Jenkins, GitHub Actions</span>
-                    </li>
-                    
-                    <li class="skills-item">
-                        <img src="src/images/skills/firewall.svg" alt="firewall"class="item-image">
-                        <span class="item-text">Containerization: Docker, Docker Compose</span>
-                    </li>
-                    
-                    <li class="skills-item">
-                        <img src="src/images/skills/vulnerability.svg" alt="vulnerability" class="item-image">
-                        <span class="item-text">Orchestration: Kubernetes, Helm</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/burpsuite.svg" alt="burpsuite" class="item-image">
-                        <span class="item-text">IaC: Terraform, Ansible</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/security.svg" alt="security" class="item-image">
-                        <span class="item-text">Cloud Platforms: Yandex.Cloud</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/cloud.svg" alt="cloud" class="item-image">
-                        <span class="item-text">Monitoring and Logging: Prometheus, Grafana, Zabbix, ELK Stack</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/cloud.svg" alt="cloud" class="item-image">
-                        <span class="item-text">Networking and Security: OpenVPN, MikroTik, KES, MaxPatrol</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/cloud.svg" alt="cloud" class="item-image">
-                        <span class="item-text">Operating Systems: Linux administration (Ubuntu, CentOS, Debian), Windows Server</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/cloud.svg" alt="cloud" class="item-image">
-                        <span class="item-text">Scripting and Programming: Bash, Python, basic Go</span>
-                    </li>
-                    <li class="skills-item">
-                        <img src="src/images/skills/cloud.svg" alt="cloud" class="item-image">
-                        <span class="item-text">Databases: SQL queries, MySQL, PostgreSQL, Redis</span>
-                    </li>
-                </ul>
-            </section>
-        </aside>
-        <div class="content">
-            <section class="summary">
-                <h3 class="section-title title">Summary</h3>
-                <div class="summary-text"><br>
-                <div class="summary-strengths">
-                    <h4 class="title strength-title">My strengths:</h4>
-                    <ul class="strengths-list">
-                        <li class="strengths-item">Hard-working and detail-oriented</li>
-                        <li class="strengths-item">Quick learner with a proactive mindset</li>
-                        <li class="strengths-item">Responsible and dependable team player</li>
-                        <li class="strengths-item">Adaptable to dynamic environments</li>
-                        <li class="strengths-item">Strong problem-solving and analytical skills</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="language">
-                <h3 class="section-title title">Languages:</h3>
-                <div class="languages">
-                    <div class="languages-item language-ru">Russian - <mark>native</mark></div>
-                    <div  class="languages-item language-en">English - <mark>upper-intermediate</mark></div>
-                    <div class="languages-item language-chi">Chinese - <mark>beginner</mark></div>
-                </div>
-            </section>
+      <section class="education">
+        <h3 class="education-title title aside-title" data-i18n="education.title">Education</h3>
+        <div class="education-text item-text education-block" data-i18n="education.ssu">
+          Saratov State University: faculty CSIT, <b>Applied computer science</b> full-time — 2020-2025
         </div>
-    </main>
-    <footer class="footer">
-            <div class="footer-year">© 2025</div>
-            <div class="footer-git">
-                <a href="https://github.com/artevely" target="_blank" class="git-link">
-                    <img src="src/images/contacts/github-footer.svg" alt="github" class="footer-github">
-                </a>
-            </div>
-    </footer>
+        <div class="education-text item-text education-block" data-i18n="education.school21">
+          School 21: <b>SQL, Programming, DevOps, CyberSecurity — 2024-2025</b>
+        </div>
+        <div class="education-text item-text education-block" data-i18n="education.ptstart">
+          PTStart: <b>Windows & Linux administration, Network, Web, DevOps — 2024</b>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h3 class="skills-title title aside-title" data-i18n="skills.title">Skills</h3>
+        <ul class="skills-items">
+          <li class="skills-item">
+            <img src="src/images/skills/test-management.svg" alt="test management" class="item-image">
+            <span class="item-text"><span data-i18n="skills.testManagement">Test Management:</span> TestRail, Qase, YandexTracker, TestIT</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/bugtracker.svg" alt="bug tracker" class="item-image">
+            <span class="item-text"><span data-i18n="skills.bugTracking">Bug Tracking:</span> Jira, YouTrack, Redmine</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/api.svg" alt="api testing" class="item-image">
+            <span class="item-text"><span data-i18n="skills.apiTesting">API Testing:</span> Postman, Swagger</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/proxy.svg" alt="proxy" class="item-image">
+            <span class="item-text"><span data-i18n="skills.debugging">Network & Mobile Debugging:</span> Charles, Fiddler, DevTools, Android Studio</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/sql.svg" alt="sql" class="item-image">
+            <span class="item-text"><span data-i18n="skills.databases">Databases:</span> SQL (MySQL, PostgreSQL), basic MongoDB</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/os.svg" alt="os" class="item-image">
+            <span class="item-text"><span data-i18n="skills.os">Operating Systems:</span> Windows, Linux (Ubuntu, CentOS), Android, iOS</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/docs.svg" alt="documentation" class="item-image">
+            <span class="item-text"><span data-i18n="skills.docs">Documentation & Test Design:</span> Test cases, checklists, bug reports, requirements analysis</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/automation.svg" alt="automation" class="item-image">
+            <span class="item-text"><span data-i18n="skills.automation">Basic Automation:</span> Python (pytest, requests)</span>
+          </li>
+          <li class="skills-item">
+            <img src="src/images/skills/version-control.svg" alt="git" class="item-image">
+            <span class="item-text"><span data-i18n="skills.versionControl">Version Control:</span> Git, GitHub, GitLab</span>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <div class="content">
+      <section class="summary">
+        <h3 class="section-title title" data-i18n="summary.title">Summary</h3>
+        <div class="summary-strengths">
+          <h4 class="title strength-title" data-i18n="summary.strengthsTitle">My strengths:</h4>
+          <ul class="strengths-list">
+            <li class="strengths-item" data-i18n="summary.strengths.0">Attention to detail and focus on product quality</li>
+            <li class="strengths-item" data-i18n="summary.strengths.1">Experienced in designing test cases, checklists, and bug reports</li>
+            <li class="strengths-item" data-i18n="summary.strengths.2">Able to quickly understand business logic and system requirements</li>
+            <li class="strengths-item" data-i18n="summary.strengths.3">Proactive in identifying risks and edge cases</li>
+            <li class="strengths-item" data-i18n="summary.strengths.4">Team-oriented, but capable of independent decision-making</li>
+            <li class="strengths-item" data-i18n="summary.strengths.5">Strong analytical thinking and problem-solving skills</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="language">
+        <h3 class="section-title title" data-i18n="languages.title">Languages:</h3>
+        <div class="languages">
+          <div class="languages-item language-ru" data-i18n="languages.ru">Russian - <mark>native</mark></div>
+          <div class="languages-item language-en" data-i18n="languages.en">English - <mark>upper-intermediate</mark></div>
+          <div class="languages-item language-chi" data-i18n="languages.chi">Chinese - <mark>beginner</mark></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-year" data-i18n="footer.year">© 2025</div>
+    <div class="footer-git">
+      <a href="https://github.com/artevely" target="_blank" class="git-link">
+        <img src="src/images/contacts/github-footer.svg" alt="github" class="footer-github">
+      </a>
+    </div>
+  </footer>
+
+  <script src="src/scripts/script.js"></script>
 </body>
 </html>
-

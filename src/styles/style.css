@@ -252,3 +252,32 @@ body {
     color: white;
 }
 
+.lang-switcher {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.lang-switcher button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.lang-switcher button:hover {
+    background-color: white;
+    color: black;
+}
+
+.lang-switcher button.active {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+}
