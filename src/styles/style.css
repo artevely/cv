@@ -1,283 +1,278 @@
 @font-face {
-    font-family: 'Nunito-Bold';
-    src: url(../fonts/Nunito-Bold.ttf);
+  font-family: 'Nunito-Bold';
+  src: url(../fonts/Nunito-Bold.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 768px;
-    margin: 0 auto;
-    font-family: 'Nunito-Bold', sans-serif;
+  font-family: 'Nunito-Bold', sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+  line-height: 1.4;
+  overflow-x: hidden;
 }
 
+/* ========== HEADER ========== */
 .header {
-    display: grid;
-    position: relative;
-    grid-template-columns: 170px 1fr;
-    align-items: center;
-    padding: 20px 40px;
-    background-color:  rgba(62, 62, 62, 1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(62, 62, 62, 1);
+  color: white;
+  padding: 30px 20px;
+  position: relative;
+  text-align: center;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    border-top: 50px solid rgba(62, 62, 62, 1);
-    border-right: 125px solid transparent;
-    left: 125px;
-    bottom: -50px;
+.header-avatar img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
-.header::after {
-    content: "";
-    position: absolute;
-    border-top: 50px solid rgba(62, 62, 62, 1);
-    border-left: 125px solid transparent;
-    left: 0;
-    bottom: -50px;
-
-}
-
-.header-avatar {
-    justify-self: center;
-}
-
-.header-avatar img{
-    max-width: 240px;
-    border-radius: 50%;
-}
-
-.header-title {
-    justify-self: center;
-    color: white;
+.header-avatar img:hover {
+  transform: scale(1.05);
 }
 
 .header-title-name {
-    font-size: 44px;
+  font-size: 2rem;
 }
 
 .header-title-prof {
-    font-size: 26px;
+  font-size: 1.2rem;
+  color: #f0b75a;
+  margin-bottom: 10px;
 }
 
 .header-title-more {
-    padding-top: 30px;
-    font-size: 14px;
-    text-align: end;
-}
-
-.main {
-    display: grid;
-    grid-template-areas:
-    "aside content";
-    grid-template-columns: 33% 67%;
-}
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 80px 20px 20px 20px;
-    background-color: lightgray;
-}
-
-.aside-title {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-.contacts-items {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 10px;
-}
-
-.contacts-item {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-.item-image {
-    width: 20px;
-}
-
-.item-text {
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-}
-
-.content {
-    padding-top: 80px;
-}
-
-.education {
-    position: relative;
-}
-
-.education-block {
-    border-left: 2px solid black;
-    border-radius: 2px;
-    margin-bottom: 15px;
-}
-
-.education-text {
-    padding-left: 20px;
-}
-
-.skills-items {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.skills-item {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-.content {
-    background-color: white;
-    padding-left: 50px;
-}
-
-.section-title {
-    position: relative;
-    font-size: 26px;
-    border-bottom: 1px solid black;
-    margin-bottom: 15px;
-}
-
-.summary-strengths {
-    margin-top: 15px;
-}
-
-.strength-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.strengths-list {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    padding-left: 40px;
-    list-style: circle;
-    margin-bottom: 30px;
-}
-
-.code-task {
-    margin-bottom: 10px;
-}
-
-.screen-code {
-    max-width: 100%;
-    margin-bottom: 30px;
-}
-
-.screen-code img {
-    max-width: 100%;
-    border-radius: 5%;
-}
-
-.languages {
-    display: grid;
-    grid-template-columns: repeat(3, 160px);
-    grid-template-rows: 50px 1fr;
-    grid-template-areas: 
-    "ru en chi"
-    "en-img en-img en-img";
-}
-
-.language-ru mark {
-    color: green;
-    background-color: transparent;
-    grid-area: ru;
-}
-
-.language-en mark {
-    color: orange;
-    background-color: transparent;
-    grid-area: en;
-}
-
-.language-chi mark {
-    color: red;
-    background-color: transparent;
-    grid-area: chi;
-}
-
-.certificate-en {
-    grid-area: en-img;
-    max-width: 100%;
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:  rgba(62, 62, 62, 0.7);
-    padding: 20px;
-    
-}
-
-.footer-logo {
-    width: 150px;
-}
-
-.footer-year {
-    color: white;
-}
-
-
-
-.git-link {
-    display: flex;
-    align-items: center;
-    width: 50px;
-}
-
-.footer-github {
-    width: 50px;
-}
-
-.link-text {
-    color: white;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 .lang-switcher {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    top: 20px;
-    right: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .lang-switcher button {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .lang-switcher button:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .lang-switcher button.active {
-    background-color: orange;
-    border-color: orange;
-    color: white;
+  background-color: orange;
+  border-color: orange;
+  color: white;
+}
+
+/* ========== MAIN ========== */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.aside {
+  background-color: #efefef;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.aside-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contacts-items,
+.skills-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.contacts-item,
+.skills-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.item-image {
+  width: 20px;
+  height: 20px;
+}
+
+.item-text {
+  color: #222;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.item-text:hover {
+  color: #f0b75a;
+}
+
+/* ========== CONTENT ========== */
+.content {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #222;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.strengths-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.languages-item {
+  flex: 1 1 30%;
+  font-size: 1rem;
+}
+
+.languages-item mark {
+  background: none;
+  font-weight: bold;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(62, 62, 62, 0.9);
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer-github {
+  width: 40px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-github:hover {
+  transform: scale(1.1);
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header-avatar img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .header-title-name {
+    font-size: 1.8rem;
+  }
+
+  .content,
+  .aside {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header-avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-title-name {
+    font-size: 1.5rem;
+  }
+
+  .header-title-prof {
+    font-size: 1rem;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .aside,
+  .content {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .lang-switcher {
+    position: static;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
 }
